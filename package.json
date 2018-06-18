@@ -1,0 +1,25 @@
+{
+  "name": "node-red-contrib-pubsub",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "node-red": {
+    "nodes": {
+      "pub": "./lib/pub/pub.js",
+      "sub": "./lib/sub/sub.js"
+    }
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "keywords": [
+    "jbpm",
+    "modeler",
+    "node-red"
+  ],
+  "author": "",
+  "license": "ISC"
+}

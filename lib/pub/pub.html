@@ -1,0 +1,46 @@
+<script type="text/javascript">
+    RED.nodes.registerType('pub', {
+        category: 'pubSub',
+        color: '#FDF0C2',
+        defaults: {
+            name: {
+                value: ""
+            },
+            topic:{
+                value:""
+            },
+            message:{
+                value:""
+            }
+        },
+        inputs: 1,
+        // outputs: 1,
+        icon: 'bridge.png',
+        label: function () {
+            return this.name || 'pub'
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="pub">
+    
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-topic"><i class="fa fa-globe"></i> Topic</label>
+        <input type="text" id="node-input-topic" placeholder="topic">
+    </div>
+    <div class="form-row">
+        <label for="node-input-message"><i class="fa fa-globe"></i> message</label>
+        <input type="text" id="node-input-message" placeholder="message">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="pub">
+    <p>Publisher Node.</p>
+    <h3>Input</h3>
+    
+    
+</script>

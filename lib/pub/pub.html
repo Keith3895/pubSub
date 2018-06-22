@@ -6,11 +6,11 @@
             name: {
                 value: ""
             },
-            topic:{
-                value:""
+            topic: {
+                value: ""
             },
-            message:{
-                value:""
+            message: {
+                value: ""
             }
         },
         inputs: 1,
@@ -39,8 +39,23 @@
 </script>
 
 <script type="text/x-red" data-help-name="pub">
-    <p>Publisher Node.</p>
+    <p>Publisher Node. To send message subscriber nodes.</p>
     <h3>Input</h3>
-    
+    <dl class="message-properties">
+        <dt>
+            topic
+            <span class="property-type">String</span>
+        </dt>
+        <dd>
+            The topic the message has to be sent by. Topic is similar to a event name in socket. 
+        </dd>   
+        <dt>
+            payload
+            <span class="property-type">String/JSON</span>
+        </dt>
+        <dd>
+            the message has to be sent to the subscriber nodes.
+        </dd>   
+    <dl> 
     
 </script>

@@ -14,7 +14,7 @@
         outputs: 1,
         icon: 'bridge.png',
         label: function () {
-            return this.name || 'sub'
+            return this.name || 'subscriber'
         }
     });
 </script>
@@ -32,7 +32,21 @@
 </script>
 
 <script type="text/x-red" data-help-name="sub">
-    <p>A simple node for jBPM check out</p>
-    <h3>Input</h3>
-    
+    <p>Subscriber Node, To listen for a message passed for a specific topic.</p>
+    <h3>Output</h3>
+    <dl class="message-properties">
+        <dt>
+            payload
+            <span class="property-type">String/JSON</span>
+        </dt>
+        <dd>
+            the message body that was sent through on the publisher node.
+        </dd>   
+    </dl> 
+    <h3>Details</h3>
+    <ul>
+        <li>
+            <code>topic</code> is used to listen to a specific event for any messages that are published.    
+        </li>
+    </ul>  
 </script>
